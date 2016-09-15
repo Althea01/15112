@@ -28,6 +28,15 @@ def roundHalfUp(d):
 def mostFrequentDigit(n):
     return 42
 
+def isPowerfulNumber(n):
+    for x in range(n**0.5):
+        for i in range(n**0.4):
+            if n//(x**2)*(i**3)==0:
+                return True
+    return False
+    
+print(isPowerfulNumber(1))
+
 def nthPowerfulNumber(n):
     return 42
 
